@@ -1,0 +1,49 @@
+.footer {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width:375px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+
+        @media screen and (max-width:375px) {
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 156%;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    &__all {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 237%;
+        letter-spacing: -0.03em;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.7);
+         @media screen and (max-width:375px) {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 156%;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

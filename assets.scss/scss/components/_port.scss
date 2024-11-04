@@ -1,0 +1,79 @@
+.port {
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width:375px) {
+            gap: 50px;
+        }
+    }
+
+    &__text {
+        font-family: sans-serif;
+        font-weight: 800;
+        font-size: 58px;
+        color: #fff;
+        margin-bottom: 70px;
+        @media screen and (max-width:375px) {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 150%;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__cards {
+        height: 420px;
+        display: flex;
+        gap: 24px;
+        margin-bottom: 50px;
+        @media screen and (max-width:375px) {
+            margin-bottom:0px;
+            gap: 0px;
+        }
+    }
+
+    &__card1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    &__card2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width:375px) {
+            display: none;
+        }
+    }
+
+    &__card3 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        @media screen and (max-width:375px) {
+            display: none;
+        }
+
+    }
+
+    &__transfer {
+        @media screen and (max-width:375px) {
+            display: none;
+        }
+    }
+
+    &__chevron {
+        display: none;
+
+        @media screen and (max-width:375px) {
+            display: block;
+        }
+    }
+}

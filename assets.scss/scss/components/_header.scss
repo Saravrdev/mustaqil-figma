@@ -1,0 +1,59 @@
+.header{
+   
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen  and (max-width:375px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 188px;
+        }
+        
+        
+       
+    }
+    &__menu{
+        display: none;
+        @media screen and (max-width:375px){
+            
+            display: block;
+            
+        }
+    }
+
+    &__nav {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.7);
+        @media screen and (max-width:375px){
+           
+            display: none;
+            
+        }
+
+    }
+
+    &__link:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__button {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        width: 157px;
+        height: 44px;
+        backdrop-filter: blur(2px);
+        font-family:sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #fff;
+        @media screen and (max-width:375px){
+           display: none;
+        }
+    }
+}
