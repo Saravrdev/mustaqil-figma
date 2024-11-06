@@ -4,7 +4,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media screen  and (max-width:375px) {
+        @media screen and (max-width:970px) {
+            
+        }
+        @media screen  and (max-width:576px) {
             display: flex;
             justify-content: space-between;
             gap: 188px;
@@ -15,7 +18,7 @@
     }
     &__menu{
         display: none;
-        @media screen and (max-width:375px){
+        @media screen and (max-width:576px){
             
             display: block;
             
@@ -23,22 +26,35 @@
     }
 
     &__nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
         font-family: sans-serif;
         font-weight: 400;
         font-size: 18px;
         text-align: right;
         color: rgba(255, 255, 255, 0.7);
-        @media screen and (max-width:375px){
+        @media screen and (max-width:970px) {
+            gap: 20px;
+            font-size: 16px;
+        }
+        @media screen and (max-width:760px) {
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:576px){
            
             display: none;
+            
             
         }
 
     }
 
-    &__link:not(:last-child) {
-        margin-right: 40px;
-    }
+    // &__link:not(:last-child) {
+    //     margin-right: 40px;
+    // }
 
     &__button {
         border: 1px solid #fff;
@@ -52,7 +68,17 @@
         letter-spacing: -0.03em;
         text-align: center;
         color: #fff;
-        @media screen and (max-width:375px){
+        @media screen and (max-width:970px) {
+            width: 130px;
+            height: 35px;
+          
+        }
+        @media screen and (max-width:760px) {
+            width: 120px;
+            height: 30px;
+        }
+        @media screen and (max-width:576px){
+            
            display: none;
         }
     }

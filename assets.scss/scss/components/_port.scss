@@ -4,7 +4,12 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        @media screen and (max-width:375px) {
+
+        @media screen and (max-width:760px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width:576px) {
             gap: 50px;
         }
     }
@@ -15,7 +20,8 @@
         font-size: 58px;
         color: #fff;
         margin-bottom: 70px;
-        @media screen and (max-width:375px) {
+
+        @media screen and (max-width:576px) {
             font-weight: 700;
             font-size: 36px;
             line-height: 150%;
@@ -29,8 +35,13 @@
         display: flex;
         gap: 24px;
         margin-bottom: 50px;
-        @media screen and (max-width:375px) {
-            margin-bottom:0px;
+
+        @media screen and (max-width:760px) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 0px;
             gap: 0px;
         }
     }
@@ -47,7 +58,8 @@
         align-items: center;
         justify-content: center;
 
-        @media screen and (max-width:375px) {
+
+        @media screen and (max-width:576px) {
             display: none;
         }
     }
@@ -57,14 +69,19 @@
         align-items: flex-end;
         justify-content: flex-end;
 
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:970px) {
+            display: none;
+        }
+
+
+        @media screen and (max-width:576px) {
             display: none;
         }
 
     }
 
     &__transfer {
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:576px) {
             display: none;
         }
     }
@@ -72,7 +89,7 @@
     &__chevron {
         display: none;
 
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:576px) {
             display: block;
         }
     }

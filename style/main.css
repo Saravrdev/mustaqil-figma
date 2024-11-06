@@ -40,7 +40,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .header__row {
     display: flex;
     justify-content: space-between;
@@ -50,25 +50,37 @@ button {
 .header__menu {
   display: none;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .header__menu {
     display: block;
   }
 }
 .header__nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
   font-family: sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: right;
   color: rgba(255, 255, 255, 0.7);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .header__nav {
+    gap: 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .header__nav {
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
   .header__nav {
     display: none;
   }
-}
-.header__link:not(:last-child) {
-  margin-right: 40px;
 }
 .header__button {
   border: 1px solid #fff;
@@ -83,7 +95,19 @@ button {
   text-align: center;
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .header__button {
+    width: 130px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .header__button {
+    width: 120px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
   .header__button {
     display: none;
   }
@@ -95,7 +119,17 @@ button {
   justify-content: space-between;
   gap: 40px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .banner__row {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .banner__row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
   .banner__row {
     display: flex;
     flex-direction: column;
@@ -115,7 +149,7 @@ button {
   line-height: 105%;
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .banner__title {
     font-family: sans-serif;
     font-weight: 700;
@@ -132,7 +166,13 @@ button {
   letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0.7);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 760px) {
+  .banner__subtitle {
+    font-size: 19px;
+    line-height: 168%;
+  }
+}
+@media screen and (max-width: 576px) {
   .banner__subtitle {
     font-family: sans-serif;
     font-weight: 400;
@@ -160,7 +200,19 @@ button {
   width: 582px;
   height: 636px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .banner__image img {
+    width: 482px;
+    height: 536px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .banner__image img {
+    width: 582px;
+    height: 636px;
+  }
+}
+@media screen and (max-width: 576px) {
   .banner__image img {
     width: 381px;
     height: 414px;
@@ -173,16 +225,25 @@ button {
   align-items: center;
   gap: 50px;
 }
+@media screen and (max-width: 970px) {
+  .group__row {
+    gap: 30px;
+  }
+}
 .group__title {
   display: flex;
   justify-content: space-between;
   gap: 135px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .group__title {
+    gap: 135px;
+  }
+}
+@media screen and (max-width: 576px) {
   .group__title {
     display: flex;
     flex-direction: column;
-    gap: 50px;
   }
 }
 .group__text {
@@ -192,7 +253,17 @@ button {
   line-height: 117%;
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .group__text {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .group__text {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 576px) {
   .group__text {
     font-family: sans-serif;
     font-weight: 700;
@@ -209,11 +280,16 @@ button {
   letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0.7);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 760px) {
+  .group__subtitle {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
   .group__subtitle {
     font-family: sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc(100% - 5px);
     line-height: 150%;
     color: rgba(255, 255, 255, 0.7);
   }
@@ -222,15 +298,29 @@ button {
   width: 1200px;
   height: 670px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .group__image__img {
+    width: 500px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .group__image__img {
+    width: 400px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 576px) {
   .group__image {
     display: none;
+    width: calc(100% - 827px);
+    height: calc(100% - 676px);
   }
 }
 .group__image-res {
   display: none;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .group__image-res {
     display: block;
   }
@@ -246,13 +336,13 @@ button {
 .provide__title {
   display: flex;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .provide__title {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .provide__icon {
     display: none;
   }
@@ -265,7 +355,12 @@ button {
   text-align: center;
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .provide__text {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
   .provide__text {
     font-weight: 700;
     font-size: 36px;
@@ -279,13 +374,28 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 970px) {
+  .provide__cards {
+    gap: 10px;
+  }
+}
 .provide__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .provide__top {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .provide__top {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
   .provide__top {
     flex-direction: column;
   }
@@ -295,7 +405,18 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .provide__bottom {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .provide__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
   .provide__bottom {
     flex-direction: column;
   }
@@ -308,8 +429,25 @@ button {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 970px) {
+  .provide__card {
+    width: 330px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .provide__card {
+    width: 384px;
+    height: 300px;
+  }
+}
 .provide__card:not(:last-child) {
   margin-right: 24px;
+}
+@media screen and (max-width: 970px) {
+  .provide__card:not(:last-child) {
+    margin-right: 5px;
+  }
 }
 .provide__card-title {
   font-family: sans-serif;
@@ -338,7 +476,12 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 760px) {
+  .port__row {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
   .port__row {
     gap: 50px;
   }
@@ -350,7 +493,7 @@ button {
   color: #fff;
   margin-bottom: 70px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .port__text {
     font-weight: 700;
     font-size: 36px;
@@ -365,7 +508,12 @@ button {
   gap: 24px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 760px) {
+  .port__cards {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
   .port__cards {
     margin-bottom: 0px;
     gap: 0px;
@@ -381,7 +529,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .port__card2 {
     display: none;
   }
@@ -391,12 +539,17 @@ button {
   align-items: flex-end;
   justify-content: flex-end;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
   .port__card3 {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
+  .port__card3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
   .port__transfer {
     display: none;
   }
@@ -404,7 +557,7 @@ button {
 .port__chevron {
   display: none;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .port__chevron {
     display: block;
   }
@@ -419,7 +572,12 @@ button {
   justify-content: space-between;
   padding: 187px 0;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 970px) {
+  .contact__row {
+    padding: 120px 0;
+  }
+}
+@media screen and (max-width: 576px) {
   .contact__row {
     flex-direction: column;
     padding: 80px 0;
@@ -433,7 +591,7 @@ button {
   font-size: 60px;
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .contact__title {
     font-weight: 700;
     font-size: 36px;
@@ -452,7 +610,7 @@ button {
   text-align: center;
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .contact__button {
     width: 166px;
     height: 44px;
@@ -468,7 +626,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .footer__row {
     flex-direction: column;
     gap: 40px;
@@ -484,7 +642,7 @@ button {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .footer__group {
     flex-direction: column;
     font-weight: 700;
@@ -503,7 +661,7 @@ button {
   text-align: right;
   color: rgba(255, 255, 255, 0.7);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .footer__all {
     font-weight: 400;
     font-size: 18px;

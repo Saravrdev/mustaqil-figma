@@ -4,6 +4,9 @@
         flex-direction: column;
         align-items: center;
         gap: 50px;
+        @media screen and (max-width:970px){
+            gap: 30px;
+        }
 
     }
 
@@ -11,11 +14,15 @@
         display: flex;
         justify-content: space-between;
         gap: 135px;
+        @media screen and (max-width:970px){
+            gap: 135px;
 
-        @media screen and (max-width:375px) {
+        }
+       
+        @media screen and (max-width:576px) {
             display: flex;
             flex-direction: column;
-            gap: 50px;
+           
         }
     }
 
@@ -25,8 +32,14 @@
         font-size: 60px;
         line-height: 117%;
         color: #fff;
+        @media screen and (max-width:970px){
+            font-size:48px ;
+        }
+        @media screen and (max-width:760px){
+            font-size: 46px;
+        }
 
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:576px) {
             font-family: sans-serif;
             font-weight: 700;
             font-size: 36px;
@@ -42,11 +55,14 @@
         line-height: 186%;
         letter-spacing: -0.03em;
         color: rgba(255, 255, 255, 0.7);
+        @media screen and (max-width:760px){
+            font-size: 20px;
+        }
 
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:576px) {
             font-family: sans-serif;
             font-weight: 400;
-            font-size: 16px;
+            font-size: calc(100% - 5px);
             line-height: 150%;
             color: rgba(255, 255, 255, 0.7);
         }
@@ -55,14 +71,26 @@
     &__image {
         width: 1200px;
         height: 670px;
+        &__img{
+            @media screen and (max-width:970px){
+                width: 500px;
+                height: 280px;
+            }
+            @media screen and (max-width:760px){
+                width: 400px;
+                height: 280px;
+            }
+        }
 
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:576px) {
            display: none;
+           width: calc(100% - 827px);
+           height: calc(100% - 676px);
         }
     }
     &__image-res{
         display: none;
-        @media screen and (max-width:375px) {
+        @media screen and (max-width:576px) {
             display: block;
          }
     }
